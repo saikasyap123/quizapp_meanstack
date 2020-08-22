@@ -1,0 +1,30 @@
+<img src="https://res.cloudinary.com/springboard-images/image/upload/q_auto,f_auto,fl_lossy/wordpress/2019/05/aiexcerpt.png" height="100%" width="100%">
+<mat-toolbar class='navbar' color='primary'>
+    <div>Quiz Application
+    </div>
+    <div>{{var1}}</div>
+</mat-toolbar>
+<div class="Instructions">
+    <div class="mat-headline">Choose the Correct Option and Click on 'Next Arrow'.To Clear the Response Click on 'Delete'</div>
+</div>
+
+<div class="container-1">
+<div style="color: whitesmoke; font-size: 20px; font-style: normal; width: 100vw; height: 2em; text-transform: capitalize;margin-left: 1em;" [class.spl]="effect">{{currentQuestion}}</div>
+<div style="color:crimson;font-size: 19px; font-style: italic; width: 100vw; height: 2em; margin-left: 1em;margin-bottom: 1em;">
+<button mat-button [class.spl]="effect" (click)="var31=true;effect=false;" [class.clicked]="var31" (click)="score(option1)">{{option1}}</button>
+</div>
+<div style="color:crimson;font-size: 19px; font-style: italic; width: 100vw; height: 2em; margin-left: 1em;margin-bottom: 1em;">
+<button mat-button [class.spl]="effect" (click)="var32=true;effect=false;" [class.clicked]="var32" (click)="score(option2)">{{option2}}</button>
+</div>
+<div style="color:crimson;font-size: 19px; font-style: italic; width: 100vw; height: 2em; margin-left: 1em;margin-bottom: 1em;">
+<button mat-button [class.spl]="effect" (click)="var33=true;effect=false;" [class.clicked]="var33" (click)="score(option3)">{{option3}}</button>
+</div>
+<div style="color:crimson;font-size: 19px; font-style: italic; width: 100vw; height: 2em; margin-left: 1em;margin-bottom: 1em;">
+<button mat-button [class.spl]="effect" (click)="var34=true;effect=false;" [class.clicked]="var34" (click)="score(option4)">{{option4}}</button>
+</div>
+</div>
+<div class="controls">
+<button mat-fab style="margin-left: 6rem;" (click)="goNext()"    (click)="var31=false;var32=false;var33=false;var34=false;effect=true;"><mat-icon>navigate_next</mat-icon></button>
+<button mat-fab style="margin-left: 10rem;" (click)="clear()" (click)="var31=false;var32=false;var33=false;var34=false"><mat-icon>delete</mat-icon></button>
+    
+</div>

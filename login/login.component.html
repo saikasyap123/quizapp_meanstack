@@ -1,0 +1,31 @@
+<img src='https://lh3.googleusercontent.com/proxy/I0lqiJebGUGELhQF_5wJcCT_QeRYuNplPhvFw08N9ZbuDkJy_HodRjfMDz0qEpKfLua7J1fcPn_tfT0bDYCN9h3eMpGIHOKXRH2EUXSm-_x7o_tkwK-yirHAnle3bR4hnQTEHWk' width='100%' height='100%'>
+<div class="text">
+    <div class='mat-display-1'>Welcome to Quiz</div>
+</div>
+<mat-toolbar class='navbar' color="primary">
+    <div>Quiz Application</div>
+</mat-toolbar>
+<mat-card>
+    <mat-card-title>Log in Here</mat-card-title>
+    <mat-card-content>
+        <form [formGroup]='LoginForm'>
+            <div>
+                <mat-form-field appearance='outline' color='primary'>
+                    <mat-label>UserName</mat-label>
+                    <input formControlName='username' class='form-control' type='text' matInput required>
+                </mat-form-field><mat-icon>face</mat-icon>
+            </div>
+            <div>
+                <mat-form-field appearance='outline' color='primary'>
+                    <mat-label>Password</mat-label>
+                    <input formControlName='password' class='form-control' type='password' matInput required>
+                </mat-form-field><mat-icon>lock_open</mat-icon>
+            </div>
+        </form>
+    </mat-card-content>
+    <mat-card-footer align='center'>Doesn't have an Account! Signup in Home</mat-card-footer>
+    <mat-card-actions align='center'>
+        <button mat-fab color='primary' (click)='Home()'><mat-icon>home</mat-icon></button>
+        <button mat-fab color='primary' [disabled]='LoginForm.invalid' (click)='login1()'><mat-icon>login</mat-icon></button>
+    </mat-card-actions>
+</mat-card>

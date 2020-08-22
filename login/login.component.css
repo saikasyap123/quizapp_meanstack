@@ -1,0 +1,24 @@
+.text {
+    position: absolute;
+    top:15rem;
+    left:15rem;
+    color: aqua;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+}
+mat-card {
+    position: absolute;
+    top:18%;
+    right:20%;
+    width:420px;
+    height:380px;
+}
+mat-card button {
+    margin: 1rem;
+}
+mat-card div {
+    margin-left: 6rem;
+    margin-bottom: 0.5rem;
+  }

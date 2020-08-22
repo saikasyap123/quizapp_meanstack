@@ -1,0 +1,52 @@
+<img src="https://thumbor.forbes.com/thumbor/711x474/https://blogs-images.forbes.com/startswithabang/files/2019/08/darknesses.jpg?width=960" height="100%" width="100%">
+<mat-card>
+    <mat-card-title>Admin Panel</mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="QuestionForm">
+            <div>
+                <mat-form-field appearance='outline' color="primary">
+                    <mat-label>Question No</mat-label>
+                    <input  formControlName="quesno" class='form-control' type="number" matInput required>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance='outline' color="primary">
+                    <mat-label>Question</mat-label>
+                    <input   formControlName="question" class='form-control'type="text" matInput required>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance='outline' color="primary">
+                    <mat-label>Option1</mat-label>
+                    <input  formControlName="opt1" class='form-control' type="text" matInput required>
+                </mat-form-field>
+                <mat-form-field style="margin: 3px;"appearance='outline' color="primary">
+                    <mat-label>Option2</mat-label>
+                    <input formControlName="opt2" class='form-control' type="text" matInput required>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance='outline' color="primary">
+                    <mat-label>Option3</mat-label>
+                    <input  formControlName="opt3" class='form-control' type="text" matInput required>
+                </mat-form-field>
+                <mat-form-field style="margin: 3px;"appearance='outline' color="primary">
+                    <mat-label>Option4</mat-label>
+                    <input  formControlName="opt4" class='form-control' type="text" matInput required>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance='outline' color="primary">
+                    <mat-label>Answer</mat-label>
+                    <input formControlName="ans" class='form-control' type="text" matInput required>
+                </mat-form-field>
+            </div>
+            
+        </form>
+    </mat-card-content>
+    <mat-card-actions align="center">
+        <button mat-mini-fab color="accent" (click)="Home()"><mat-icon>home</mat-icon></button>
+        <button mat-mini-fab color="accent" (click)="sendData()"><mat-icon>done</mat-icon></button>
+    </mat-card-actions>
+    
+</mat-card>

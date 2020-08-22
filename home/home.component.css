@@ -1,0 +1,28 @@
+ .text {
+     position: absolute;
+     top:35%;
+     left:10%;
+ }
+ .navbar {
+    justify-content : space-between;
+    position: absolute;
+    top:0;
+  }
+  .navbar button {
+    padding-right : 1rem;
+    font-size:18px;
+  }
+  .navbar button:hover {
+    color : black;
+  }
+  mat-card {
+      position: absolute;
+      top:18%;
+      right:20%;
+      width:420px;
+      height:450px;
+  }
+  mat-card div {
+    margin-left: 6rem;
+    margin-bottom: 1rem;
+  }
